@@ -1,7 +1,7 @@
 {
-  "name": "Liga-A-start-template",
+  "name": "super-gym",
   "version": "2.0.0",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "super-gym",
   "browserslist": [
     "last 3 versions",
     "IE 11",

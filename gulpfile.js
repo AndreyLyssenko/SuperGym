@@ -72,8 +72,9 @@ const copyImages = () => {
 const copy = () => {
   return gulp.src([
     'source/**.html',
-    'source/fonts/**',
     'source/img/**',
+    '!source/img/sprite/**',
+    'source/fonts/**',
     'source/favicon/**',
   ], {
     base: 'source',
@@ -88,7 +89,7 @@ const clean = () => {
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'sitemap.html',
+    index: 'index.html',
     notify: false,
     open: true,
     cors: true,
@@ -113,10 +114,6 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js);
-
-const start = gulp.series(build, syncServer);
-
 // Optional tasks
 //---------------------------------
 
@@ -127,7 +124,7 @@ const start = gulp.series(build, syncServer);
 // root = 'content/' - webp добавляются и обновляются только в source/img/content/
 
 const createWebp = () => {
-  const root = '';
+  const root = 'content/';
   return gulp.src(`source/img/${root}**/*.{png,jpg}`)
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest(`source/img/${root}`));
@@ -141,6 +138,10 @@ const optimizeImages = () => {
       ]))
       .pipe(gulp.dest('build/img'));
 };
+
+const build = gulp.series(clean, svgo, copy, css, sprite, js, createWebp, optimizeImages);
+
+const start = gulp.series(build, syncServer);
 
 exports.imagemin = optimizeImages;
 exports.webp = createWebp;
