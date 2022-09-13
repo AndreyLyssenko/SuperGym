@@ -1,0 +1,48 @@
+.about {
+  position: relative;
+  max-width: 1190px;
+  padding: 120px 15px 0;
+  margin: 0 auto;
+  display: flex;
+}
+
+.about__text-wrapper {
+  max-width: 355px;
+  margin: 51px auto 0 61px;
+
+  h2 {
+    margin: 0 0 4px;
+    font-family: $bebas-neue;
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+  }
+
+  h3 {
+    margin: 0 0 41px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  p {
+    margin: 0 0 7px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.about__media-wrapper {
+  margin-left: 70px;
+
+  img {
+    max-width: 660px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
