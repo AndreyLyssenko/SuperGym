@@ -1,3 +1,18 @@
 @import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
+@import "general/fonts.scss";
+@import "general/helpers.scss";
+@import "general/variables.scss";
+@import "general/general.scss";
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/greetings.scss";
+@import "blocks/about.scss";
+@import "blocks/video.scss";
+@import "blocks/cards.scss";
+@import "blocks/games.scss";
+@import "blocks/trainers.scss";
+@import "blocks/advantages.scss";
+@import "blocks/promo.scss";
+@import "blocks/feedback.scss";
+@import "blocks/communication.scss";
+@import "blocks/footer.scss";

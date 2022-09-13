@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  padding-bottom: 46px;
+}
+
+.header__wrapper {
+  max-width: 1190px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__headline {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-family: $bebas-neue;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-top: 30px;
+
+  a {
+    letter-spacing: 0.02em;
+    color: $main-white;
+    text-decoration: none;
+
+    &[href]:hover {
+      color: $main-blue;
+    }
+  }
+}

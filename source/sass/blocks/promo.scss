@@ -1,0 +1,128 @@
+.promo {
+  max-width: 1190px;
+  padding: 120px 15px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    font-family: $bebas-neue;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    margin: 0 0 50px;
+  }
+}
+
+.promo__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.promo__item {
+  max-width: 560px;
+  min-height: 211px;
+  width: 100%;
+
+  &:not(&--main) {
+    padding: 24px 28px 30px;
+    border: 7px solid;
+    border-image-slice: 1;
+    border-image-source: $border-gradient;
+    color: $dark-blue;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: 26px;
+      line-height: 26px;
+    }
+
+    p {
+      margin: 0 0 auto;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  a {
+    width: max-content;
+    display: block;
+    position: relative;
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $main-blue;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  &--main {
+    display: flex;
+    grid-row: 1/3;
+  }
+}
+
+.promo__text {
+  display: flex;
+  flex-direction: column;
+  color: $main-white;
+  background-color: $main-red;
+  max-width: 280px;
+  padding: 34px 45px 46px;
+
+  h3 {
+    font-size: 28px;
+    line-height: 43px;
+  }
+
+  span {
+    display: block;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 61px;
+    margin-bottom: 23px;
+  }
+
+  p {
+    margin: 0 0 auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 16px;
+    color: $main-white;
+  }
+}
