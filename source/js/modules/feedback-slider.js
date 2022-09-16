@@ -7,6 +7,10 @@ let count = 0;
 let itemWidth;
 let width;
 
+sliderItems.forEach((item) => {
+  item.querySelector('.feedback__item-wrapper').classList.remove('feedback__item-wrapper--no-js');
+});
+
 const rollSlider = (slideRange) => {
   sliderTrack.style.transform = 'translate(-' + count * slideRange + 'px, 0)';
 };

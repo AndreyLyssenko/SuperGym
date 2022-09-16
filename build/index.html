@@ -24,19 +24,26 @@
         <section class="greetings">
           <div class="greetings__text-wrapper">
             <span>Омск</span>
-            <h1>Фитнес центр</h1>
-            <ul>
-              <li>Тренажёрный зал</li>
-              <li>Групповые занятия</li>
-              <li>Кардио-зона</li>
-            </ul>
+            <div class="greetings__header">
+              <h1>Фитнес центр</h1>
+              <ul>
+                <li>Тренажёрный зал</li>
+                <li>Групповые занятия</li>
+                <li>Кардио-зона</li>
+              </ul>
+            </div>
             <a href="#cards">Купить абонемент</a>
           </div>
-          <picture>
-            <!-- 1x: 500px; 2x: 1000px -->
-            <source type="image/webp" srcset="img/content/greetings/greentings-superman.webp 1x, img/content/greetings/greentings-superman@2x.webp 2x">
-            <img src="img/content/greetings/greentings-superman.jpg" srcset="img/content/greetings/greentings-superman@2x.jpg 2x" width="500" height="556" alt="SuperGymMan">
-          </picture>
+          <div class="greetings__img-wrapper">
+            <picture>
+              <!-- 1x: 324px; 2x: 648px -->
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/greetings/greetings-superman-tablet.webp 1x, img/content/greetings/greetings-superman-tablet@2x.webp 2x">
+              <source media="(max-width: 1199px)" srcset="img/content/greetings/greetings-superman-tablet.jpg 1x, img/content/greetings/greetings-superman-tablet@2x.jpg 2x">
+              <!-- 1x: 500px; 2x: 1000px -->
+              <source type="image/webp" srcset="img/content/greetings/greetings-superman.webp 1x, img/content/greetings/greetings-superman@2x.webp 2x">
+              <img src="img/content/greetings/greetings-superman.jpg" srcset="img/content/greetings/greetings-superman@2x.jpg 2x" width="500" height="556" alt="SuperGymMan">
+            </picture>
+          </div>
           <ul class="greetings__social-list">
             <li><a href="#">FB</a></li>
             <li><a href="#">VK</a></li>
@@ -55,6 +62,12 @@
         </div>
         <div class="about__media-wrapper">
           <picture>
+            <!-- 1x: 320px; 2x: 640px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/about/about-photo-mobile.webp 1x, img/content/about/about-photo-mobile@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/content/about/about-photo-mobile.jpg 1x, img/content/about/about-photo-mobile@2x.jpg 2x">
+            <!-- 1x: 320px; 2x: 640px -->
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/about/about-photo-tablet.webp 1x, img/content/about/about-photo-tablet@2x.webp 2x">
+            <source media="(max-width: 1199px)" srcset="img/content/about/about-photo-tablet.jpg 1x, img/content/about/about-photo-tablet@2x.jpg 2x">
             <!-- 1x: 660px; 2x: 1320px -->
             <source type="image/webp" srcset="img/content/about/about-photo.webp 1x, img/content/about/about-photo@2x.webp 2x">
             <img src="img/content/about/about-photo.jpg" srcset="img/content/about/about-photo@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал">
@@ -90,7 +103,7 @@
                       <h3>С тренером</h3>
                       <p>12 занятий</p>
                     </div>
-                    <p><span data-text="5000">5000</span>&thinsp;&#8381;</p>
+                    <p><span data-text="5000">5000</span></p>
                     <a href="#">купить абонемент</a>
                   </li>
                   <li class="cards__item">
@@ -98,7 +111,7 @@
                       <h3>Дневной</h3>
                       <p>с 8:00 до 17:00 </p>
                     </div>
-                    <p><span data-text="1700">1700</span>&thinsp;&#8381;</p>
+                    <p><span data-text="1700">1700</span></p>
                     <a href="#">купить абонемент</a>
                   </li>
                   <li class="cards__item">
@@ -106,7 +119,7 @@
                       <h3>Полный день</h3>
                       <p>с 8:00 до 22:00 </p>
                     </div>
-                    <p><span data-text="2700">2700</span>&thinsp;&#8381;</p>
+                    <p><span data-text="2700">2700</span></p>
                     <a href="#">купить абонемент</a>
                   </li>
                 </ul>
@@ -116,7 +129,7 @@
                       <h3>С тренером</h3>
                       <p>72 занятия</p>
                     </div>
-                    <p><span data-text="15000">15000</span> &#8381;</p>
+                    <p><span data-text="15000">15000</span></p>
                     <a href="#">купить абонемент</a>
                   </li>
                   <li class="cards__item">
@@ -124,7 +137,7 @@
                       <h3>Дневной</h3>
                       <p>с 8:00 до 17:00 </p>
                     </div>
-                    <p><span data-text="6000">6000</span> &#8381;</p>
+                    <p><span data-text="6000">6000</span></p>
                     <a href="#">купить абонемент</a>
                   </li>
                   <li class="cards__item">
@@ -132,7 +145,7 @@
                       <h3>Полный день</h3>
                       <p>с 8:00 до 22:00 </p>
                     </div>
-                    <p><span data-text="10000">10000</span> &#8381;</p>
+                    <p><span data-text="10000">10000</span></p>
                     <a href="#">купить абонемент</a>
                   </li>
                 </ul>
@@ -142,7 +155,7 @@
                       <h3>С тренером</h3>
                       <p>144 занятия</p>
                     </div>
-                    <p><span data-text="20000">20000</span> &#8381;</p>
+                    <p><span data-text="20000">20000</span></p>
                     <a href="#">купить абонемент</a>
                   </li>
                   <li class="cards__item">
@@ -150,7 +163,7 @@
                       <h3>Дневной</h3>
                       <p>с 8:00 до 17:00 </p>
                     </div>
-                    <p><span data-text="10000">10000</span> &#8381;</p>
+                    <p><span data-text="10000">10000</span></p>
                     <a href="#">купить абонемент</a>
                   </li>
                   <li class="cards__item">
@@ -158,7 +171,7 @@
                       <h3>Полный день</h3>
                       <p>с 8:00 до 22:00 </p>
                     </div>
-                    <p><span data-text="15000">15000</span> &#8381;</p>
+                    <p><span data-text="15000">15000</span></p>
                     <a href="#">купить абонемент</a>
                   </li>
                 </ul>
@@ -192,6 +205,9 @@
             </div>
             <div class="games__media-wrapper">
               <picture>
+                <!-- 1x: 386px; 2x: 772px -->
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/games/games-cross-tablet.webp 1x, img/content/games/games-cross-tablet@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="img/content/games/games-cross-tablet.jpg 1x, img/content/games/games-cross-tablet@2x.jpg 2x">
                 <!-- 1x: 660px; 2x: 1320px -->
                   <source type="image/webp" srcset="img/content/games/games-cross.webp 1x, img/content/games/games-cross@2x.webp 2x">
                   <img src="img/content/games/games-cross.jpg" srcset="img/content/games/games-cross@2x.jpg 2x" width="660" height="500" alt="Соревнования по кросс-фиту в SuperGym">
@@ -205,7 +221,7 @@
         <div class="trainers__wrapper">
           <div class="trainers__container">
             <ul class="swiper-wrapper trainers__list">
-              <li class="swiper-slide trainers__item">
+              <li class="swiper-slide trainers__item trainers__item--no-js">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -225,7 +241,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item">
+              <li class="swiper-slide trainers__item trainers__item--no-js">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -245,7 +261,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item">
+              <li class="swiper-slide trainers__item trainers__item--no-js">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -265,7 +281,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item">
+              <li class="swiper-slide trainers__item trainers__item--no-js">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -285,7 +301,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item">
+              <li class="swiper-slide trainers__item trainers__item--no-js">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -305,7 +321,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item">
+              <li class="swiper-slide trainers__item trainers__item--no-js">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -325,7 +341,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item">
+              <li class="swiper-slide trainers__item trainers__item--no-js">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -345,7 +361,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item">
+              <li class="swiper-slide trainers__item trainers__item--no-js">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -365,7 +381,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item">
+              <li class="swiper-slide trainers__item trainers__item--no-js">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -385,7 +401,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item">
+              <li class="swiper-slide trainers__item trainers__item--no-js">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -484,10 +500,13 @@
               <div class="promo__text">
                 <h3>Год</h3>
                 <span>4999</span>
-                <p>Безлимитный абонемент в тренажерный зал</p>
+                <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
                 <a href="#">подробнее</a>
               </div>
               <picture>
+                <!-- 1x: 399px; 2x: 798px -->
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/promo/promo-main-tablet.webp 1x, img/content/promo/promo-main-tablet@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="img/content/promo/promo-main-tablet.jpg 1x, img/content/promo/promo-main-tablet@2x.jpg 2x">
                 <!-- 1x: 260px; 2x: 520px -->
                 <source type="image/webp" srcset="img/content/promo/promo-main.webp 1x, img/content/promo/promo-main@2x.webp 2x">
                 <img src="img/content/promo/promo-main.jpg" srcset="img/content/promo/promo-main@2x.jpg 2x" width="280" height="462" alt="Безлимитный абонемент в тренажерный зал">
@@ -495,12 +514,12 @@
             </li>
             <li class="promo__item">
               <h3>Месяц бесплатно</h3>
-              <p>Приведи друга, получи абонемент в подарок</p>
+              <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
               <a href="#">подробнее</a>
             </li>
             <li class="promo__item">
               <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес с командой</p>
+              <p>Корпоративный фитнес с&nbsp;командой</p>
               <a href="#">подробнее</a>
             </li>
           </ul>
@@ -512,68 +531,42 @@
           <div class="feedback__container">
             <ul class="feedback__track">
               <li class="feedback__item">
-                <div class="feedback__item-wrapper">
-                  <picture>
-                    <!-- 1x: 80px; 2x: 160px -->
-                    <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
-                    <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
-                  </picture>
-                  <div class="feedback__text">
-                    <h3>Анна Орлова</h3>
-                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                <div class="feedback__item-wrapper feedback__item-wrapper--no-js">
+                  <div class="feedback__image-wrapper">
+                    <picture>
+                      <!-- 1x: 80px; 2x: 160px -->
+                      <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
+                      <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
+                    </picture>
                   </div>
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </div>
               </li>
               <li class="feedback__item">
-                <div class="feedback__item-wrapper">
-                  <picture>
-                    <!-- 1x: 80px; 2x: 160px -->
-                    <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
-                    <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
-                  </picture>
-                  <div class="feedback__text">
-                    <h3>Анна Орлова</h3>
-                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                <div class="feedback__item-wrapper feedback__item-wrapper--no-js">
+                  <div class="feedback__image-wrapper">
+                    <picture>
+                      <!-- 1x: 80px; 2x: 160px -->
+                      <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
+                      <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
+                    </picture>
                   </div>
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </div>
               </li>
               <li class="feedback__item">
-                <div class="feedback__item-wrapper">
-                  <picture>
-                    <!-- 1x: 80px; 2x: 160px -->
-                    <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
-                    <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
-                  </picture>
-                  <div class="feedback__text">
-                    <h3>Анна Орлова</h3>
-                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                <div class="feedback__item-wrapper feedback__item-wrapper--no-js">
+                  <div class="feedback__image-wrapper">
+                    <picture>
+                      <!-- 1x: 80px; 2x: 160px -->
+                      <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
+                      <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
+                    </picture>
                   </div>
-                </div>
-              </li>
-              <li class="feedback__item">
-                <div class="feedback__item-wrapper">
-                  <picture>
-                    <!-- 1x: 80px; 2x: 160px -->
-                    <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
-                    <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
-                  </picture>
-                  <div class="feedback__text">
-                    <h3>Анна Орлова</h3>
-                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  </div>
-                </div>
-              </li>
-              <li class="feedback__item">
-                <div class="feedback__item-wrapper">
-                  <picture>
-                    <!-- 1x: 80px; 2x: 160px -->
-                    <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
-                    <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
-                  </picture>
-                  <div class="feedback__text">
-                    <h3>Анна Орлова</h3>
-                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  </div>
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </div>
               </li>
             </ul>
@@ -613,6 +606,7 @@
         <section class="communication__contacts">
           <div class="communication__wrapper">
             <h2>Контакты</h2>
+            <div class="communication__list-wrapper">
               <dl class="communication__list">
                 <dt>Адрес:</dt>
                 <dd><a href="https://goo.gl/maps/V2z1WAnb2oPwtpGf7" target="_blank">г. Омск, ул. 60 лет Октября, 7</a></dd>
@@ -625,6 +619,7 @@
                 <dt>Email:</dt>
                 <dd><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></dd>
               </dl>
+            </div>
           </div>
         </section>
       </div>
