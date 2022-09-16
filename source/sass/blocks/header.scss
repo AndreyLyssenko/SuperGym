@@ -2,12 +2,28 @@
   width: 100%;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   padding-bottom: 46px;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 75px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 78px;
+  }
 }
 
 .header__wrapper {
   max-width: 1190px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 10px;
+  }
 }
 
 .header__headline {
@@ -21,12 +37,25 @@
   margin-top: 30px;
 
   a {
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     color: $main-white;
     text-decoration: none;
 
     &[href]:hover {
       color: $main-blue;
     }
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 20px 5px 25px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

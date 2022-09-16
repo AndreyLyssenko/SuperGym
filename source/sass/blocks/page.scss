@@ -28,12 +28,12 @@
   overflow: hidden;
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     z-index: 5;
     position: absolute;
     display: block;
-    top: 34%;
+    top: 562px;
     right: -108px;
     width: 321px;
     height: 384px;
@@ -41,5 +41,20 @@
     background-image: url("../img/decoration/cards-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  @media (max-width: $desktop-width) {
+    &::before {
+      width: 289px;
+      height: 345px;
+      top: 1511px;
+      right: -10px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
   }
 }
