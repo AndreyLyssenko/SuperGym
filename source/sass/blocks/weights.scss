@@ -1,0 +1,24 @@
+.weights {
+  position: relative;
+
+  img {
+    display: block;
+    position: absolute;
+    bottom: -98px;
+    right: -108px;
+    transform: rotate(151deg);
+  }
+
+  @media (max-width: $desktop-width) {
+    img {
+      width: 289px;
+      height: 345px;
+      bottom: -75px;
+      right: -9px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}

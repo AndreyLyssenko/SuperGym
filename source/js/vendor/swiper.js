@@ -1,8 +1,7 @@
-const swiperItems = document.querySelectorAll('.trainers__item');
+import Swiper from './swiper-bundle.js';
 
-swiperItems.forEach((item) => {
-  item.classList.remove('trainers__item--no-js');
-});
+const swiperContainer = document.querySelector('.trainers');
+swiperContainer.classList.remove('trainers--no-js')
 
 const swiper = new Swiper('.trainers__container', {
   slidesPerView: 1,
@@ -45,8 +44,8 @@ const swiper = new Swiper('.trainers__container', {
   },
 
   navigation: {
-    nextEl: '.trainers__controll-button--next',
-    prevEl: '.trainers__controll-button--prev',
+    nextEl: '.trainers__control-button--next',
+    prevEl: '.trainers__control-button--prev',
     enabled: true,
   },
 });

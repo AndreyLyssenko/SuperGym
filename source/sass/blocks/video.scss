@@ -17,7 +17,7 @@
     border: none;
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   @media (max-width: $desktop-width) {
@@ -50,7 +50,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: none;
   background-color: transparent;
   background-image: url("../img/svg/video-button-icon.svg");
   background-repeat: no-repeat;
@@ -84,8 +83,8 @@
     background-color: rgba(20, 54, 122, 0.5);
   }
 
-  &:hover + .video__button,
-  &:focus + .video__button {
+  &:hover .video__button,
+  &:focus .video__button {
     background-image: url("../img/svg/video-button-icon-hover.svg");
   }
 }

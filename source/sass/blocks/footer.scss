@@ -15,7 +15,7 @@
 
   @media (max-width: $tablet-width) {
     position: relative;
-    padding: 50px 15px;
+    padding: 48px 15px 52px;
     flex-direction: column;
   }
 }
@@ -74,15 +74,13 @@
       width: 25px;
       height: 25px;
       border-radius: 50%;
+      color: $main-blue;
       background-color: $main-white;
 
       &:hover,
       &:focus {
         background-color: $main-red;
-
-        svg {
-          fill: $main-white;
-        }
+        color: $main-white;
       }
     }
   }
@@ -119,7 +117,7 @@
       }
 
       li {
-        margin-bottom: 20px;
+        margin-bottom: 21px;
       }
 
       a {

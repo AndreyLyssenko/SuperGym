@@ -3,3 +3,244 @@
 *::after {
   box-sizing: inherit;
 }
+
+.wrapper {
+  position: relative;
+  max-width: 1190px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    font-family: $bebas-neue;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+  }
+
+  &--advantages {
+    h2 {
+      margin: 0 0 56px;
+    }
+  }
+
+  &--cards {
+    z-index: 10;
+
+    h2 {
+      margin: 0 0 35px;
+    }
+  }
+
+  &--feedback {
+    max-width: unset;
+    padding: 0 48px;
+  }
+
+  &--games {
+    display: flex;
+  }
+
+  &--trainers {
+    max-width: unset;
+    padding: 0 56px;
+    margin: 0;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding: 0 45px;
+
+    h2 {
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    &--advantages {
+      h2 {
+        margin-bottom: 42px;
+      }
+    }
+
+    &--cards {
+      padding: 0 15px;
+
+      h2 {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--trainers {
+      padding: 0 56px;
+    }
+
+    &--games {
+      max-width: 900px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    &--advantages {
+      padding: 0;
+
+      h2 {
+        margin-bottom: 47px;
+      }
+    }
+
+    &--cards {
+      h2 {
+        margin-bottom: 23px;
+      }
+    }
+
+    &--feedback {
+      padding: 0 10px;
+      margin: 0;
+    }
+
+    &--games {
+      flex-direction: column;
+      padding: 0 15px;
+
+      h2 {
+        text-align: left;
+        font-size: 52px;
+        line-height: 52px;
+      }
+    }
+
+    &--header {
+      padding: 0 10px;
+    }
+
+    &--trainers {
+      padding: 0 32px;
+    }
+  }
+}
+
+// .advantages__wrapper {
+//   max-width: 1190px;
+//   padding: 0 15px;
+//   margin: 0 auto;
+
+//   h2 {
+//     text-align: center;
+//     margin: 0 0 56px;
+//     font-family: $bebas-neue;
+//     font-weight: 700;
+//     font-size: 49px;
+//     line-height: 49px;
+//     letter-spacing: 0.03em;
+//   }
+
+//   @media (max-width: $desktop-width) {
+//     padding: 0 45px;
+
+//     h2 {
+//       margin-bottom: 42px;
+//       font-size: 42px;
+//       line-height: 42px;
+//     }
+//   }
+
+//   @media (max-width: $tablet-width) {
+//     padding: 0;
+
+//     h2 {
+//       margin-bottom: 47px;
+//       font-size: 32px;
+//       line-height: 32px;
+//     }
+//   }
+// }
+
+// .cards__wrapper {
+//   position: relative;
+//   max-width: 1190px;
+//   padding: 0 15px;
+//   margin: 0 auto;
+//   z-index: 10;
+
+//   h2 {
+//     margin: 0 0 35px;
+//     font-family: $bebas-neue;
+//     font-size: 49px;
+//     line-height: 49px;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//   }
+
+//   @media (max-width: $desktop-width) {
+//     h2 {
+//       margin-bottom: 30px;
+//       font-size: 42px;
+//       line-height: 42px;
+//     }
+//   }
+
+//   @media (max-width: $tablet-width) {
+//     h2 {
+//       margin-bottom: 23px;
+//       font-size: 32px;
+//       line-height: 32px;
+//     }
+//   }
+// }
+
+// .feedback__wrapper {
+//   position: relative;
+//   margin: 0 auto;
+//   padding: 0 48px;
+
+//   @media (max-width: $tablet-width) {
+//     padding: 0 10px;
+//     margin: 0;
+//   }
+// }
+
+// .games__wrapper {
+//   display: flex;
+//   max-width: 1190px;
+//   padding: 0 15px;
+//   margin: 0 auto;
+
+//   @media (max-width: $desktop-width) {
+//     padding: 0 45px;
+//   }
+
+//   @media (max-width: $tablet-width) {
+//     padding: 0 15px;
+//     flex-direction: column;
+//   }
+// }
+
+
+// .header__wrapper {
+//   max-width: 1190px;
+//   padding: 0 15px;
+//   margin: 0 auto;
+
+//   @media (max-width: $desktop-width) {
+//     padding: 0 45px;
+//   }
+
+//   @media (max-width: $tablet-width) {
+//     padding: 0 10px;
+//   }
+// }
+
+
+// .trainers__wrapper {
+//   padding: 0 56px;
+//   position: relative;
+
+//   @media (max-width: $tablet-width) {
+//     padding: 0 32px;
+//   }
+// }

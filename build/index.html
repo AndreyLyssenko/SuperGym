@@ -10,18 +10,17 @@
     <link rel="preload" href="fonts/roboto-condensed-300.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-condensed-400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-condensed-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper.min.css" />
     <meta name="description" content="Фитнес центр SuperGym">
     <title>SuperGym</title>
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__wrapper">
+      <div class="wrapper wrapper--header">
         <div class="header__headline">
           <a class="header__link">SuperGym</a>
           <a href="tel:+78005555555">8-800-555-55-55</a>
         </div>
-        <section class="greetings">
+        <div class="greetings">
           <div class="greetings__text-wrapper">
             <span>Омск</span>
             <div class="greetings__header">
@@ -49,7 +48,7 @@
             <li><a href="#">VK</a></li>
             <li><a href="#">IG</a></li>
           </ul>
-        </section>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -79,149 +78,137 @@
                   <source type="image/webp" srcset="img/content/about/video-preview.webp 1x, img/content/about/video-preview@2x.webp 2x">
                   <img class="video__media" src="img/content/about/video-preview.jpg" srcset="img/content/about/video-preview@2x.jpg 2x" width="364" height="228" alt="Видео тур по тренажерному залу">
               </picture>
+              <div class="video__button">
+                <span class="visually-hidden">Запустить видео</span>
+              </div>
             </a>
-            <button class="video__button" type="button" tabindex="-1">
-              <span class="visually-hidden">Запустить видео</span>
-            </button>
           </div>
         </div>
       </section>
-      <div class="page__wrapper">
-        <section class="cards" id="cards">
-          <div class="cards__wrapper">
-            <h2>Абонементы</h2>
-            <div class="cards__tabs-wrapper">
-              <div class="cards__tabs-triggers">
-                <a class="cards__trigger cards__trigger--current" href="#1-month">1 месяц</a>
-                <a class="cards__trigger" href="#6-month">6 месяцев</a>
-                <a class="cards__trigger" href="#12-month">12 месяцев</a>
-              </div>
-              <div class="cards__tabs-content">
-                <ul class="cards__list cards__list--current" id="1-month">
-                  <li class="cards__item">
-                    <div class="cards__title">
-                      <h3>С тренером</h3>
-                      <p>12 занятий</p>
-                    </div>
-                    <p><span data-text="5000">5000</span></p>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                  <li class="cards__item">
-                    <div class="cards__title">
-                      <h3>Дневной</h3>
-                      <p>с 8:00 до 17:00 </p>
-                    </div>
-                    <p><span data-text="1700">1700</span></p>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                  <li class="cards__item">
-                    <div class="cards__title">
-                      <h3>Полный день</h3>
-                      <p>с 8:00 до 22:00 </p>
-                    </div>
-                    <p><span data-text="2700">2700</span></p>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                </ul>
-                <ul class="cards__list" id="6-month">
-                  <li class="cards__item">
-                    <div class="cards__title">
-                      <h3>С тренером</h3>
-                      <p>72 занятия</p>
-                    </div>
-                    <p><span data-text="15000">15000</span></p>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                  <li class="cards__item">
-                    <div class="cards__title">
-                      <h3>Дневной</h3>
-                      <p>с 8:00 до 17:00 </p>
-                    </div>
-                    <p><span data-text="6000">6000</span></p>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                  <li class="cards__item">
-                    <div class="cards__title">
-                      <h3>Полный день</h3>
-                      <p>с 8:00 до 22:00 </p>
-                    </div>
-                    <p><span data-text="10000">10000</span></p>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                </ul>
-                <ul class="cards__list" id="12-month">
-                  <li class="cards__item">
-                    <div class="cards__title">
-                      <h3>С тренером</h3>
-                      <p>144 занятия</p>
-                    </div>
-                    <p><span data-text="20000">20000</span></p>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                  <li class="cards__item">
-                    <div class="cards__title">
-                      <h3>Дневной</h3>
-                      <p>с 8:00 до 17:00 </p>
-                    </div>
-                    <p><span data-text="10000">10000</span></p>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                  <li class="cards__item">
-                    <div class="cards__title">
-                      <h3>Полный день</h3>
-                      <p>с 8:00 до 22:00 </p>
-                    </div>
-                    <p><span data-text="15000">15000</span></p>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                </ul>
-              </div>
+      <section class="cards" id="cards">
+        <div class="wrapper wrapper--cards">
+          <h2>Абонементы</h2>
+          <div class="cards__tabs-wrapper">
+            <div class="cards__tabs-triggers cards__tabs-triggers--no-js">
+              <a class="cards__trigger cards__trigger--current" href="#month-1" data-tab-id="month-1">1 месяц</a>
+              <a class="cards__trigger" href="#month-6" data-tab-id="month-6">6 месяцев</a>
+              <a class="cards__trigger" href="#month-12" data-tab-id="month-12">12 месяцев</a>
             </div>
+            <span class="cards__title cards__title--no-js">1 месяц</span>
+            <ul class="cards__list cards__list--current cards__list--no-js" id="month-1">
+              <li class="cards__item">
+                <h3>С тренером</h3>
+                <p>12 занятий</p>
+                <span data-text="5000">5000</span>
+                <a href="#">купить абонемент</a>
+              </li>
+              <li class="cards__item">
+                <h3>Дневной</h3>
+                <p>с 8:00 до 17:00 </p>
+                <span data-text="1700">1700</span>
+                <a href="#">купить абонемент</a>
+              </li>
+              <li class="cards__item">
+                <h3>Полный день</h3>
+                <p>с 8:00 до 22:00 </p>
+                <span data-text="2700">2700</span>
+                <a href="#">купить абонемент</a>
+              </li>
+            </ul>
+            <span class="cards__title cards__title--no-js">6 месяцев</span>
+            <ul class="cards__list cards__list--no-js" id="month-6">
+              <li class="cards__item">
+                <h3>С тренером</h3>
+                <p>72 занятия</p>
+                <span data-text="15000">15000</span>
+                <a href="#">купить абонемент</a>
+              </li>
+              <li class="cards__item">
+                <h3>Дневной</h3>
+                <p>с 8:00 до 17:00 </p>
+                <span data-text="6000">6000</span>
+                <a href="#">купить абонемент</a>
+              </li>
+              <li class="cards__item">
+                <h3>Полный день</h3>
+                <p>с 8:00 до 22:00 </p>
+                <span data-text="10000">10000</span>
+                <a href="#">купить абонемент</a>
+              </li>
+            </ul>
+            <span class="cards__title cards__title--no-js">12 месяцев</span>
+            <ul class="cards__list cards__list--no-js" id="month-12">
+              <li class="cards__item">
+                <h3>С тренером</h3>
+                <p>144 занятия</p>
+                <span data-text="20000">20000</span>
+                <a href="#">купить абонемент</a>
+              </li>
+              <li class="cards__item">
+                <h3>Дневной</h3>
+                <p>с 8:00 до 17:00 </p>
+                <span data-text="10000">10000</span>
+                <a href="#">купить абонемент</a>
+              </li>
+              <li class="cards__item">
+                <h3>Полный день</h3>
+                <p>с 8:00 до 22:00 </p>
+                <span data-text="15000">15000</span>
+                <a href="#">купить абонемент</a>
+              </li>
+            </ul>
           </div>
-        </section>
-        <section class="games">
-          <div class="games__wrapper">
-            <div class="games__text-wrapper">
-              <div class="games__title-wrapper">
-                <h2>Super Games</h2>
-                <div class="games__data-wrapper">
-                  <dl class="games__data">
-                    <dt>Дата</dt>
-                    <dd>
-                      <span>7</span>
-                      <p>Марта 2019</p>
-                    </dd>
-                  </dl>
-                  <dl class="games__data">
-                    <dt>Время</dt>
-                    <dd>
-                      <span>12:00</span>
-                    </dd>
-                  </dl>
-                </div>
-              </div>
-              <p>Ежегодные соревнования по CrossFit</p>
-              <a href="#">заполнить заявку</a>
-            </div>
-            <div class="games__media-wrapper">
-              <picture>
-                <!-- 1x: 386px; 2x: 772px -->
-                <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/games/games-cross-tablet.webp 1x, img/content/games/games-cross-tablet@2x.webp 2x">
-                <source media="(max-width: 1199px)" srcset="img/content/games/games-cross-tablet.jpg 1x, img/content/games/games-cross-tablet@2x.jpg 2x">
-                <!-- 1x: 660px; 2x: 1320px -->
-                  <source type="image/webp" srcset="img/content/games/games-cross.webp 1x, img/content/games/games-cross@2x.webp 2x">
-                  <img src="img/content/games/games-cross.jpg" srcset="img/content/games/games-cross@2x.jpg 2x" width="660" height="500" alt="Соревнования по кросс-фиту в SuperGym">
-              </picture>
-            </div>
-          </div>
-        </section>
+        </div>
+      </section>
+      <div class="weights">
+        <picture>
+          <!-- 1x: 321px; 2x: 642px -->
+          <source type="image/webp" srcset="img/content/weights/weights.webp 1x, img/content/weights/weights@2x.webp 2x">
+          <img src="img/content/weights/weights.png" srcset="img/content/weights/weights@2x.jpg 2x" width="321" height="384" alt="Блины">
+        </picture>
       </div>
-      <section class="trainers" id="trainers">
+      <section class="games">
+        <div class="wrapper wrapper--games">
+          <div class="games__text-wrapper">
+            <div class="games__title-wrapper">
+              <h2>Super Games</h2>
+              <div class="games__data-wrapper">
+                <dl class="games__data">
+                  <dt>Дата</dt>
+                  <dd>
+                    <span>7</span>
+                    <p>Марта 2019</p>
+                  </dd>
+                </dl>
+                <dl class="games__data">
+                  <dt>Время</dt>
+                  <dd>
+                    <span>12:00</span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <p>Ежегодные соревнования по CrossFit</p>
+            <a href="#">заполнить заявку</a>
+          </div>
+          <div class="games__media-wrapper">
+            <picture>
+              <!-- 1x: 386px; 2x: 772px -->
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/games/games-cross-tablet.webp 1x, img/content/games/games-cross-tablet@2x.webp 2x">
+              <source media="(max-width: 1199px)" srcset="img/content/games/games-cross-tablet.jpg 1x, img/content/games/games-cross-tablet@2x.jpg 2x">
+              <!-- 1x: 660px; 2x: 1320px -->
+                <source type="image/webp" srcset="img/content/games/games-cross.webp 1x, img/content/games/games-cross@2x.webp 2x">
+                <img src="img/content/games/games-cross.jpg" srcset="img/content/games/games-cross@2x.jpg 2x" width="660" height="500" alt="Соревнования по кросс-фиту в SuperGym">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="trainers trainers--no-js" id="trainers">
         <h2>Тренеры</h2>
-        <div class="trainers__wrapper">
+        <div class="wrapper wrapper--trainers">
           <div class="trainers__container">
             <ul class="swiper-wrapper trainers__list">
-              <li class="swiper-slide trainers__item trainers__item--no-js">
+              <li class="swiper-slide trainers__item">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -241,7 +228,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item trainers__item--no-js">
+              <li class="swiper-slide trainers__item">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -261,7 +248,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item trainers__item--no-js">
+              <li class="swiper-slide trainers__item">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -281,7 +268,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item trainers__item--no-js">
+              <li class="swiper-slide trainers__item">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -301,7 +288,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item trainers__item--no-js">
+              <li class="swiper-slide trainers__item">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -321,7 +308,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item trainers__item--no-js">
+              <li class="swiper-slide trainers__item">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -341,7 +328,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item trainers__item--no-js">
+              <li class="swiper-slide trainers__item">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -361,7 +348,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item trainers__item--no-js">
+              <li class="swiper-slide trainers__item">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -381,7 +368,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item trainers__item--no-js">
+              <li class="swiper-slide trainers__item">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -401,7 +388,7 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide trainers__item trainers__item--no-js">
+              <li class="swiper-slide trainers__item">
                 <div class="trainers__item-wrapper">
                   <picture>
                     <!-- 1x: 260px; 2x: 520px -->
@@ -423,16 +410,16 @@
               </li>
             </ul>
           </div>
-          <div class="trainers__controll">
-            <button type="button" class="trainers__controll-button trainers__controll-button--prev">
+          <div class="trainers__control">
+            <button type="button" class="trainers__control-button trainers__control-button--prev">
               <span class="visually-hidden">Назад</span>
-              <svg class="trainers__controll-icon trainers__controll-icon--prev" width="16" height="32" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <svg class="trainers__control-icon trainers__control-icon--prev" width="16" height="32" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#slider-nav-icon"></use>
               </svg>
             </button>
-            <button type="button" class="trainers__controll-button trainers__controll-button--next">
+            <button type="button" class="trainers__control-button trainers__control-button--next">
               <span class="visually-hidden">Вперед</span>
-              <svg class="trainers__controll-icon trainers__controll-icon--next" width="16" height="32" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <svg class="trainers__control-icon trainers__control-icon--next" width="16" height="32" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#slider-nav-icon"></use>
               </svg>
             </button>
@@ -440,7 +427,7 @@
         </div>
       </section>
       <section class="advantages">
-        <div class="advantages__wrapper">
+        <div class="wrapper wrapper--advantages">
           <h2>Наши преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--area">
@@ -525,62 +512,56 @@
           </ul>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback feedback--no-js">
         <h2>Отзывы</h2>
-        <div class="feedback__wrapper">
+        <div class="wrapper wrapper--feedback">
           <div class="feedback__container">
             <ul class="feedback__track">
               <li class="feedback__item">
-                <div class="feedback__item-wrapper feedback__item-wrapper--no-js">
-                  <div class="feedback__image-wrapper">
-                    <picture>
-                      <!-- 1x: 80px; 2x: 160px -->
-                      <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
-                      <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
-                    </picture>
-                  </div>
-                  <h3>Анна Орлова</h3>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                <div class="feedback__image-wrapper">
+                  <picture>
+                    <!-- 1x: 80px; 2x: 160px -->
+                    <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
+                    <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
+                  </picture>
                 </div>
+                <h3>Анна Орлова</h3>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </li>
               <li class="feedback__item">
-                <div class="feedback__item-wrapper feedback__item-wrapper--no-js">
-                  <div class="feedback__image-wrapper">
-                    <picture>
-                      <!-- 1x: 80px; 2x: 160px -->
-                      <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
-                      <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
-                    </picture>
-                  </div>
-                  <h3>Анна Орлова</h3>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                <div class="feedback__image-wrapper">
+                  <picture>
+                    <!-- 1x: 80px; 2x: 160px -->
+                    <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
+                    <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
+                  </picture>
                 </div>
+                <h3>Анна Орлова</h3>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </li>
               <li class="feedback__item">
-                <div class="feedback__item-wrapper feedback__item-wrapper--no-js">
-                  <div class="feedback__image-wrapper">
-                    <picture>
-                      <!-- 1x: 80px; 2x: 160px -->
-                      <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
-                      <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
-                    </picture>
-                  </div>
-                  <h3>Анна Орлова</h3>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                <div class="feedback__image-wrapper">
+                  <picture>
+                    <!-- 1x: 80px; 2x: 160px -->
+                    <source type="image/webp" srcset="img/content/feedback/feedback-anna.webp 1x, img/content/feedback/feedback-anna@2x.webp 2x">
+                    <img src="img/content/feedback/feedback-anna.png" srcset="img/content/feedback/feedback-anna@2x.png 2x" width="80" height="80" alt="Анна Орлова">
+                  </picture>
                 </div>
+                <h3>Анна Орлова</h3>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </li>
             </ul>
           </div>
-          <div class="feedback__controll">
-            <button type="button" class="feedback__controll-button feedback__controll-button--prev">
+          <div class="feedback__control">
+            <button type="button" class="feedback__control-button feedback__control-button--prev">
               <span class="visually-hidden">Назад</span>
-              <svg class="feedback__controll-icon feedback__controll-icon--prev" width="16" height="32" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <svg class="feedback__control-icon feedback__control-icon--prev" width="16" height="32" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#slider-nav-icon"></use>
               </svg>
             </button>
-            <button type="button" class="feedback__controll-button feedback__controll-button--next">
+            <button type="button" class="feedback__control-button feedback__control-button--next">
               <span class="visually-hidden">Вперед</span>
-              <svg class="feedback__controll-icon feedback__controll-icon--next" width="16" height="32" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <svg class="feedback__control-icon feedback__control-icon--next" width="16" height="32" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#slider-nav-icon"></use>
               </svg>
             </button>
@@ -593,10 +574,12 @@
             <h2>бесплатное занятие</h2>
             <form action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="name">Ваше имя:</label>
-              <input type="text" id="name" name="name" placeholder="Имя">
+              <div class="communication__input-wrapper">
+                <input type="text" id="name" name="name" placeholder="Имя">
+              </div>
               <div class="communication__input-wrapper">
                 <label class="visually-hidden" for="tel">Ваш телефон:</label>
-                <input type="tel" id="tel" name="tel" placeholder="Телефон">
+                <input type="tel" id="tel" name="tel" placeholder="Телефон" required>
                 <span class="communication__message">Это поле должно быть формата "+79991234567" либо "79991234567"</span>
               </div>
               <button type="submit" class="communication__submit">отправить</button>
@@ -662,7 +645,6 @@
       </ul>
     </nav>
     </footer>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/vendor.min.js" async></script>
     <script src="js/main.min.js" async></script>
   </body>

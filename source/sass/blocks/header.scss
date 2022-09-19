@@ -12,20 +12,6 @@
   }
 }
 
-.header__wrapper {
-  max-width: 1190px;
-  padding: 0 15px;
-  margin: 0 auto;
-
-  @media (max-width: $desktop-width) {
-    padding: 0 45px;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding: 0 10px;
-  }
-}
-
 .header__headline {
   display: flex;
   justify-content: space-between;

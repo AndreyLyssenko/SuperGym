@@ -23,38 +23,3 @@
   bottom: 0;
   left: 0;
 }
-
-.page__wrapper {
-  overflow: hidden;
-  position: relative;
-
-  &::before {
-    content: "";
-    z-index: 5;
-    position: absolute;
-    display: block;
-    top: 562px;
-    right: -108px;
-    width: 321px;
-    height: 384px;
-    transform: rotate(150deg);
-    background-image: url("../img/decoration/cards-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  @media (max-width: $desktop-width) {
-    &::before {
-      width: 289px;
-      height: 345px;
-      top: 1511px;
-      right: -10px;
-    }
-  }
-
-  @media (max-width: $tablet-width) {
-    &::before {
-      display: none;
-    }
-  }
-}

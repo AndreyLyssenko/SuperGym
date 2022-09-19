@@ -1,15 +1,14 @@
+const sliderContainer = document.querySelector('.feedback');
 const sliderItems = document.querySelectorAll('.feedback__item');
 const sliderTrack = document.querySelector('.feedback__track');
-const sliderControllButtons = document.querySelectorAll('.feedback__controll-button');
+const slidercontrolButtons = document.querySelectorAll('.feedback__control-button');
 const slidesToShow = 1;
 const slidesToSwipe = 1;
 let count = 0;
 let itemWidth;
 let width;
 
-sliderItems.forEach((item) => {
-  item.querySelector('.feedback__item-wrapper').classList.remove('feedback__item-wrapper--no-js');
-});
+sliderContainer.classList.remove('feedback--no-js');
 
 const rollSlider = (slideRange) => {
   sliderTrack.style.transform = 'translate(-' + count * slideRange + 'px, 0)';
@@ -36,31 +35,31 @@ const enableButton = (btnArray) => {
   });
 };
 
-sliderControllButtons.forEach((btn) => {
-  if (btn.classList.contains('feedback__controll-button--prev')) {
+slidercontrolButtons.forEach((btn) => {
+  if (btn.classList.contains('feedback__control-button--prev')) {
     btn.setAttribute('disabled', '');
   }
   btn.addEventListener('click', () => {
-    if (btn.classList.contains('feedback__controll-button--next')) {
+    if (btn.classList.contains('feedback__control-button--next')) {
       count++;
 
       if (count >= sliderItems.length - slidesToShow) {
         btn.setAttribute('disabled', '');
       } else {
-        enableButton(sliderControllButtons);
+        enableButton(slidercontrolButtons);
       }
 
       rollSlider(itemWidth * slidesToSwipe);
     }
 
-    if (btn.classList.contains('feedback__controll-button--prev')) {
+    if (btn.classList.contains('feedback__control-button--prev')) {
       count--;
 
       if (count <= 0) {
         btn.setAttribute('disabled', '');
         count = 0;
       } else {
-        enableButton(sliderControllButtons);
+        enableButton(slidercontrolButtons);
       }
 
       rollSlider(itemWidth * slidesToSwipe);

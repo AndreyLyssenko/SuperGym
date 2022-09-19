@@ -128,10 +128,6 @@
       display: flex;
       flex-direction: column;
     }
-
-    input {
-      margin-bottom: 31px;
-    }
   }
 }
 
@@ -143,7 +139,9 @@
   }
 
   @media (max-width: $tablet-width) {
-    input {
+    margin-bottom: 31px;
+
+    &:last-of-type {
       margin-bottom: 38px;
     }
   }
@@ -179,6 +177,7 @@
   border-top: 1px solid #74819c;
 
   .communication__wrapper {
+    max-width: 484px;
     margin: 0;
     padding-right: 15px;
   }
@@ -190,7 +189,7 @@
 
   @media (max-width: $desktop-width) {
     border-top: none;
-    padding: 70px 49px 66px 133px;
+    padding: 70px 103px 66px 133px;
 
     .communication__wrapper {
       padding: 0;
@@ -199,7 +198,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 70px 15px 66px;
+    padding: 70px 15px 63px;
 
     h2 {
       margin-bottom: 33px;
@@ -209,8 +208,10 @@
 
 .communication__list-wrapper {
   position: relative;
-  display: flex;
-  justify-content: space-between;
+  column-count: 2;
+  column-gap: 38px;
+  column-width: 100%;
+  column-rule: 1px solid #74819c;
 
   @media (max-width: $desktop-width) {
     width: 100%;
@@ -218,7 +219,11 @@
   }
 
   @media (max-width: $tablet-width) {
+    display: flex;
     flex-direction: column;
+    column-count: 1;
+    column-gap: unset;
+    column-rule: none;
   }
 }
 
@@ -226,24 +231,8 @@
   margin: 0 0 0 3px;
   position: relative;
 
-  &:first-of-type {
-    padding-right: 63px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 0;
-      right: 0;
-      width: 1px;
-      height: 100%;
-      background-color: #74819c;
-    }
-  }
-
   &:last-of-type {
-    padding-left: 30px;
-    margin-right: 6px;
+    margin-left: 40px;
   }
 
   dt {
@@ -277,6 +266,10 @@
   @media (max-width: $desktop-width) {
     margin: 0;
 
+    &:last-of-type {
+      margin-left: 29px;
+    }
+
     dt {
       margin-bottom: 8px;
       font-size: 20px;
@@ -287,23 +280,18 @@
       font-size: 18px;
       margin-bottom: 23px;
     }
-
-    &:first-of-type {
-      padding-right: 50px;
-    }
-
-    &:last-of-type {
-      padding-left: 47px;
-    }
   }
 
   @media (max-width: $tablet-width) {
     padding: 0;
-    margin-bottom: 24px;
+    margin-bottom: 19px;
+
+    dt {
+      margin-bottom: 10px;
+    }
 
     &:last-of-type {
-      margin-bottom: 0;
-      padding-left: 0;
+      margin: 0;
     }
 
     &:first-of-type {

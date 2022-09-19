@@ -13,6 +13,10 @@
     letter-spacing: 0.03em;
   }
 
+  &--no-js {
+    display: none;
+  }
+
   @media (max-width: $desktop-width) {
     padding: 0 20px 100px;
 
@@ -34,17 +38,6 @@
   }
 }
 
-.feedback__wrapper {
-  position: relative;
-  margin: 0 auto;
-  padding: 0 48px;
-
-  @media (max-width: $tablet-width) {
-    padding: 0 10px;
-    margin: 0;
-  }
-}
-
 .feedback__container {
   position: relative;
   width: 100%;
@@ -61,15 +54,7 @@
 }
 
 .feedback__item {
-  margin: 0;
-  padding: 0 10px;
-
-  @media (max-width: $tablet-width) {
-    padding: 0 17px;
-  }
-}
-
-.feedback__item-wrapper {
+  margin: 0 10px;
   display: grid;
   grid-template-columns: 80px 1fr;
   column-gap: 28px;
@@ -77,10 +62,6 @@
   color: $main-white;
   height: 100%;
   padding: 54px 59px 57px 62px;
-
-  &--no-js {
-    grid-template-columns: 80px 331px;
-  }
 
   h3 {
     display: block;
@@ -99,20 +80,14 @@
 
   @media (max-width: $desktop-width) {
     padding: 54px 56px 57px 65px;
-
-    &--no-js {
-      grid-template-columns: 80px 337px;
-    }
+    margin: 0 13px;
   }
 
   @media (max-width: $tablet-width) {
     padding: 40px 26px 35px;
     column-gap: 18px;
     row-gap: 16px;
-
-    &--no-js {
-      grid-template-columns: 80px 76px;
-    }
+    margin: 0 17px;
 
     h3 {
       margin: 5px 15px 0 0;
@@ -145,7 +120,7 @@
   }
 }
 
-.feedback__controll {
+.feedback__control {
   position: absolute;
   width: 100%;
   top: 51%;
@@ -159,7 +134,7 @@
   }
 }
 
-.feedback__controll-button {
+.feedback__control-button {
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -180,7 +155,7 @@
   }
 }
 
-.feedback__controll-icon {
+.feedback__control-icon {
   stroke: #afafaf;
   fill: none;
   width: inherit;
