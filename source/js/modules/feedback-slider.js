@@ -1,6 +1,6 @@
 const sliderContainer = document.querySelector('.feedback');
-const sliderItems = document.querySelectorAll('.feedback__item');
 const sliderTrack = document.querySelector('.feedback__track');
+const sliderItems = sliderTrack.querySelectorAll('li');
 const slidercontrolButtons = document.querySelectorAll('.feedback__control-button');
 const slidesToShow = 1;
 const slidesToSwipe = 1;

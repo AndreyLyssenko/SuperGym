@@ -17,7 +17,7 @@ tabsTriggers.forEach((trigger) => {
   trigger.addEventListener('click', (evt) => {
     evt.preventDefault();
 
-    const id = evt.target.dataset.tabId;
+    const id = evt.target.getAttribute('href').replace('#', '');
 
     tabs.forEach((tab) => {
       tab.classList.remove('cards__list--current');

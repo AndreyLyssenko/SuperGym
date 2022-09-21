@@ -1,19 +1,25 @@
 .weights {
-  position: relative;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  height: 357px;
+  transform: translateY(-72%);
 
   img {
     display: block;
     position: absolute;
-    bottom: -98px;
+    bottom: 2px;
     right: -108px;
     transform: rotate(151deg);
   }
 
   @media (max-width: $desktop-width) {
+  transform: translateY(-78%);
+
     img {
       width: 289px;
       height: 345px;
-      bottom: -75px;
+      bottom: 4px;
       right: -9px;
     }
   }
