@@ -3,10 +3,6 @@
   padding: 0 15px 120px;
   margin: 0 auto;
 
-  &--no-js {
-    display: none;
-  }
-
   h2 {
     font-family: $bebas-neue;
     font-size: 49px;
@@ -50,6 +46,12 @@
 }
 
 .trainers__item {
+  &--no-js {
+    margin-right: 40px;
+    width: 260px;
+    height: 294px;
+  }
+
   &:hover,
   &:active {
     .trainers__text {
@@ -74,6 +76,11 @@
   }
 
   @media (max-width: $desktop-width) {
+    &--no-js {
+      margin-right: 30px;
+      width: 268px;
+    }
+
     h3 {
       margin-left: 8px;
     }
@@ -91,6 +98,12 @@
   }
 
   @media (max-width: $tablet-width) {
+    &--no-js {
+      margin-right: 10px;
+      width: 226px;
+      height: 274px;
+    }
+
     h3 {
       margin: 0;
       font-size: 18px;
@@ -188,6 +201,10 @@
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
+
+  &--no-js {
+    display: none;
+  }
 }
 
 .trainers__control-button {

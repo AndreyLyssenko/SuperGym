@@ -1,7 +1,14 @@
 import Swiper from './swiper-bundle.js';
 
-const swiperContainer = document.querySelector('.trainers');
-swiperContainer.classList.remove('trainers--no-js')
+const swiperItems = document.querySelectorAll('.trainers__item');
+const swiperControl = document.querySelector('.trainers__control');
+
+swiperControl.classList.remove('trainers__control--no-js');
+
+swiperItems.forEach((item) => {
+  item.classList.remove('trainers__item--no-js');
+});
+
 
 const swiper = new Swiper('.trainers__container', {
   slidesPerView: 1,
