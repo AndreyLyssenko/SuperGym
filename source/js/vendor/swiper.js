@@ -9,7 +9,6 @@ swiperItems.forEach((item) => {
   item.classList.remove('trainers__item--no-js');
 });
 
-
 const swiper = new Swiper('.trainers__container', {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -55,4 +54,10 @@ const swiper = new Swiper('.trainers__container', {
     prevEl: '.trainers__control-button--prev',
     enabled: true,
   },
+});
+
+swiper.slides.forEach((item) => {
+  if (!item.classList.contains('swiper-slide-duplicate')) {
+    item.setAttribute('tabindex', '0');
+  };
 });

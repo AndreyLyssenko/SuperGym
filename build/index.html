@@ -17,8 +17,15 @@
     <header class="header">
       <div class="wrapper wrapper--header">
         <div class="header__headline">
-          <a class="header__link">SuperGym</a>
-          <a href="tel:+78005555555">8-800-555-55-55</a>
+          <a class="header__link">
+            <span class="visually-hidden">SuperGym</span>
+            <svg width="89" height="20" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#supergym-logo"></use>
+            </svg>
+          </a>
+          <div class="header__tel-wrapper">
+            <a href="tel:+78005555555">8-800-555-55-55</a>
+          </div>
         </div>
         <div class="greetings">
           <div class="greetings__text-wrapper">
@@ -74,9 +81,12 @@
           <div class="video">
             <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank">
               <picture>
+                <!-- 1x: 320px; 2x: 640px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/content/about/video-preview-mobile.webp 1x, img/content/about/video-preview-mobile@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/content/about/video-preview-mobile.jpg 1x, img/content/about/video-preview-mobile@2x.jpg 2x">
                 <!-- 1x: 364px; 2x: 728px -->
-                  <source type="image/webp" srcset="img/content/about/video-preview.webp 1x, img/content/about/video-preview@2x.webp 2x">
-                  <img class="video__media" src="img/content/about/video-preview.jpg" srcset="img/content/about/video-preview@2x.jpg 2x" width="364" height="228" alt="Видео тур по тренажерному залу">
+                <source type="image/webp" srcset="img/content/about/video-preview.webp 1x, img/content/about/video-preview@2x.webp 2x">
+                <img class="video__media" src="img/content/about/video-preview.jpg" srcset="img/content/about/video-preview@2x.jpg 2x" width="364" height="228" alt="Видео тур по тренажерному залу">
               </picture>
               <div class="video__button">
                 <span class="visually-hidden">Запустить видео</span>
@@ -192,7 +202,9 @@
             <a href="#">заполнить заявку</a>
           </div>
           <div class="games__media-wrapper">
-            <picture>
+            <picture> <!-- 1x: 290px; 2x: 580px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/content/games/games-cross-mobile.webp 1x, img/content/games/games-cross-mobile@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/content/games/games-cross-mobile.jpg 1x, img/content/games/games-cross-mobile@2x.jpg 2x">
               <!-- 1x: 386px; 2x: 772px -->
               <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/games/games-cross-tablet.webp 1x, img/content/games/games-cross-tablet@2x.webp 2x">
               <source media="(max-width: 1199px)" srcset="img/content/games/games-cross-tablet.jpg 1x, img/content/games/games-cross-tablet@2x.jpg 2x">
@@ -592,13 +604,29 @@
             <div class="communication__list-wrapper">
               <dl class="communication__list">
                 <dt>Адрес:</dt>
-                <dd><a href="https://goo.gl/maps/V2z1WAnb2oPwtpGf7" target="_blank">г. Омск, ул. 60 лет Октября, 7</a></dd>
+                <dd>
+                  <div class="communication__data">
+                    <a href="https://goo.gl/maps/V2z1WAnb2oPwtpGf7" target="_blank">г. Омск, ул. 60 лет Октября, 7</a>
+                  </div>
+                </dd>
                 <dt>График работы:</dt>
-                <dd>Пн-Вс: с 8:00 до 22:00</dd>
+                <dd>
+                  <div class="communication__data">
+                    <p>Пн-Вс: с 8:00 до 22:00</p>
+                  </div>
+                </dd>
                 <dt>Телефон:</dt>
-                <dd><a href="tel:+78005555555">8-800-555-55-55</a></dd>
+                <dd>
+                  <div class="communication__data">
+                    <a href="tel:+78005555555">8-800-555-55-55</a>
+                  </div>
+                </dd>
                 <dt>Email:</dt>
-                <dd><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></dd>
+                <dd>
+                  <div class="communication__data">
+                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </div>
+                </dd>
               </dl>
             </div>
           </div>
@@ -607,7 +635,12 @@
     </main>
     <footer class="footer">
       <nav class="footer__navigation">
-        <a class="footer__main-link">SuperGym</a>
+        <a class="footer__main-link">
+          <span class="visually-hidden">SuperGym</span>
+          <svg width="89" height="20" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#supergym-logo"></use>
+          </svg>
+        </a>
       <ul class="footer__list footer__list--navigation">
         <li><a href="#about">Услуги</a></li>
         <li><a href="#cards">Абонементы</a></li>

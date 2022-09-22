@@ -233,6 +233,7 @@
   column-rule: 1px solid #74819c;
 
   dt {
+    break-after: avoid;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -245,6 +246,10 @@
     line-height: 21px;
     font-weight: 400;
     margin: 0 0 18px 4px;
+
+    &:nth-of-type(2n-1) {
+      break-after: avoid;
+    }
 
     &:nth-of-type(2n) {
       margin-bottom: 0;
@@ -259,6 +264,11 @@
     &:focus {
       color: $main-red;
     }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
   }
 
   @media (max-width: $desktop-width) {
@@ -278,6 +288,7 @@
 
   @media (max-width: $tablet-width) {
     padding: 0;
+    column-count: 1;
 
     dd {
       &:nth-of-type(2n) {
@@ -293,4 +304,10 @@
       margin-bottom: 10px;
     }
   }
+}
+
+.communication__data {
+  break-inside: avoid;
+  display: flex;
+  flex-direction: column;
 }

@@ -133,24 +133,33 @@
 }
 
 .footer__main-link {
+  display: block;
   margin: 2px 279px 0 0;
-  font-family: $bebas-neue;
-  font-size: 26px;
-  line-height: 26px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  width: 89px;
+  height: 17px;
+  color: $main-white;
+
+  svg {
+    width: inherit;
+    height: inherit;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $main-red;
+  }
 
   @media (max-width: $desktop-width) {
     margin: 4px auto 0 6px;
-    font-size: 24px;
-    line-height: 24px;
+    width: 82px;
+    height: 23px;
   }
 
   @media (max-width: $tablet-width) {
     position: absolute;
-    margin: 0;
-    font-size: 20px;
-    line-height: 20px;
+    margin: 2px 0 0;
+    width: 68px;
+    height: 16px;
   }
 }
 

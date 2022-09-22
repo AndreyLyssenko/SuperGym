@@ -11,7 +11,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 70px 0;
+    padding: 70px 0 69px;
   }
 }
 
@@ -90,6 +90,7 @@
 .about__media-wrapper {
   position: relative;
   margin-left: 70px;
+  max-height: 401px;
 
   img {
     display: block;
@@ -102,6 +103,7 @@
     margin: 0;
     overflow: hidden;
     padding-bottom: 83px;
+    max-height: unset;
 
     img {
       margin: 0 auto;

@@ -53,6 +53,7 @@
   }
 
   &:hover,
+  &:focus,
   &:active {
     .trainers__text {
       display: block;
@@ -86,6 +87,7 @@
     }
 
     &:hover,
+    &:focus,
     &:active {
       h3 {
         margin-right: 17px;
@@ -114,6 +116,7 @@
     }
 
     &:hover,
+    &:focus,
     &:active {
       h3 {
         margin: 43px 0 0 0;

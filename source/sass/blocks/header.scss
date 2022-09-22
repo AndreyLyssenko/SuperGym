@@ -45,3 +45,32 @@
     line-height: 20px;
   }
 }
+
+.header__link {
+  width: 89px;
+  height: 20px;
+  color: $main-white;
+
+  svg {
+    width: inherit;
+    height: inherit;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 68px;
+    height: 15px;
+  }
+}
+
+.header__tel-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 190px;
+}
